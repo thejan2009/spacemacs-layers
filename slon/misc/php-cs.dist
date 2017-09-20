@@ -1,0 +1,14 @@
+<?php
+
+return PhpCsFixer\Config::create()
+    ->setRules([
+        'no_whitespace_before_comma_in_array' => true,
+        'no_whitespace_in_blank_line'         => true,
+        'whitespace_after_comma_in_array'     => true,
+        'concat_space'                        => ['spacing' => 'one'],
+        '@PSR2'                               => true,
+        'binary_operator_spaces'              => [
+            'align_double_arrow' => true,
+            'align_equals'       => true,
+        ],
+    ])->setUsingCache(false);

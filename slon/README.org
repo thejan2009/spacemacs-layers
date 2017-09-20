@@ -1,0 +1,30 @@
+#+TITLE: SLON layer
+
+[[img/slong.png]]
+
+* Table of Contents                                        :TOC_4_gh:noexport:
+- [[#description][Description]]
+- [[#install][Install]]
+- [[#key-bindings][Key bindings]]
+
+* Description
+php
+
+* Install
+To use this configuration layer, add it to your =~/.spacemacs=. You will need to
+add =slon= to the existing =dotspacemacs-configuration-layers= list in this
+file.
+
+Install external programs for linting and formatting:
+
+#+BEGIN_SRC bash
+composer global require "squizlabs/php_codesniffer=*" friendsofphp/php-cs-fixer
+#+END_SRC
+
+* Key bindings
+
+| Key Binding | Description                           |
+|-------------+---------------------------------------|
+| ~SPC m f~   | Invoke php-cs-fixer on current buffer |
+| ~SPC m h d~ | php-doc-insert-doc                    |
+| ~SPC m h h~ | search documentation                  |
